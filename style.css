@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    max-height: initial;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px;
+    background-color: rgb(211, 211, 211);
+}
+
+.div1{
+    left: 5%;
+    top: 2.5%;
+    grid-column: 1;
+    grid-row: 1/6;
+    position: relative;
+    background-color: #f0f8ff;
+    width: 400px;
+    height: 97.5vh;
+    border-radius: 10px;
+}
+
+
+.fotoenome{
+    position: relative;
+}
+
+.foto{
+    position: relative;
+    border-radius: 10px;
+}
+.nome{
+    margin-top: -10%;
+    margin-left: 2.5%;
+    font-style: oblique;
+    color: #f0f8ff;
+    position: relative;
+    text-shadow: 1px 1px #000000;
+}
+
+.pessoal{
+    margin-top: 2.5%;
+    margin-left: 10%;
+    font-size: large;
+    position: relative;
+   
+}
+
+hr{
+    margin-top: 5%;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.habilidades{
+    margin-top: 2.5%;
+    margin-left: 10%;
+    position: relative;
+  
+}
+
+.cima{
+    top: 2.5%;
+    right: 2.5%;
+    grid-column: 2;
+    grid-row: 1/6;
+    position: relative;
+    background-color: #f0f8ff;
+    height: 150px;
+    border-radius: 10px;
+
+}
+
+
+.trabalho{
+    position: relative;
+    margin: 20px;
+}
+
+.baixo{
+    grid-column: 2;
+    grid-row: 2/4;
+    margin-top: 5%;    
+    position: relative;
+    background-color: hsl(208, 100%, 97%);
+    height: 100%;
+    right: 2.5%;
+    border-radius: 10px;
+}
+
+.lista3{
+    margin-left: 5%;
+}
+
+.proj{
+    margin-left: 2.5%;
+    height: auto;
+}
+
+.hangman{
+    margin-top: 2.5%;
+    border-radius: 10px;
+}
+
+.projetos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100% 100%;
+}
+
+.pythona, .jsa, .teste{
+    text-align: center;
+    margin-top: 2em;    
+}
+
+.modal_python, .modal_js{
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 50%;
+    padding: 2%;
+}
+
+.modal, .modaljs{
+    background-color: #f0f8ff;
+    opacity: 1;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 10px;
+}
+
+.modal:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.modal:target .modalpy__content{
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 1em;
+    opacity: 0;
+    visibility: hidden; 
+}
+.modaljs:target{
+    opacity: 1;
+    visibility: visible;
+}
+.modaljs:target .modaljs__content{
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 1em;
+    opacity: 0;
+    visibility: hidden; 
+}
+.modal__heading{
+    margin-bottom: 1em;
+}
+
+.modal__paragraph{
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+p{
+    overflow: scroll;
+    max-height: 80vh;
+}
+
+.modal__close{
+    font-size: 2em;
+    color: #363636;
+    position: absolute;
+    top: -1em;
+    right: 0.5em;
+}
+
+
+img, video{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+a:link,
+a:visited{
+    color: #363636;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 1em;
+}
