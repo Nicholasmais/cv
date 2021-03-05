@@ -114,21 +114,23 @@ hr{
     grid-template-rows: 100% 100%;
 }
 
-.pythona, .jsa, .teste{
+.pythona, .jsa, .pd{
     text-align: center;
     margin-top: 2em;    
 }
 
-.modal_python, .modal_js{
+.modal_python, .modal_js, .modal_pd, .aa{
     background-color: rgba(0,0,0,0.4);
     border-radius: 50%;
     padding: 2%;
 }
 
-.modal, .modaljs{
+
+.modal, .modaljs, .modalpd{
     background-color: #f0f8ff;
     opacity: 1;
     width: 100%;
+    min-height: 300px;
     position: absolute;
     top: 0;
     left: 0;
@@ -138,14 +140,13 @@ hr{
     border-radius: 10px;
 }
 
-.modal:target{
+.modal:target, .modaljs:target, .modalpd:target{
     opacity: 1;
     visibility: visible;
 }
 
 
-.modal:target .modalpy__content{
-    background-color: #fff;
+.modal:target .modalpy__content, .modaljs:target .modaljs__content, .modalpd:target .modal_pd{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -153,33 +154,42 @@ hr{
     border-radius: 1em;
     opacity: 0;
     visibility: hidden; 
+    
 }
-.modaljs:target{
-    opacity: 1;
-    visibility: visible;
-}
-.modaljs:target .modaljs__content{
-    background-color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 1em;
-    opacity: 0;
-    visibility: hidden; 
-}
+
 .modal__heading{
+    margin-left: 2.5%;
     margin-bottom: 1em;
 }
 
 .modal__paragraph{
     line-height: 1.5em;
     text-align: justify;
+    text-align: center;
 }
 
+
 p{
+    min-height: 300px;
     overflow: scroll;
+    overflow-x: hidden;
     max-height: 80vh;
+
+}
+
+.ppd{
+    overflow-y: hidden;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 25%;
+    
+}
+.aa{
+    display: inline-block;
+    position: relative;
+
+    
 }
 
 .modal__close{
