@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: darkgray;
+    display: flex;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.escrita{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 420px;
+
+
+}
+
+.texto{
+    width: auto;
+    top: 100px;
+    text-align: justify;
+}
+
+.h1{
+    text-align: center;
+}
+/* Menu da esquerda */
+.MenuHambur{
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all 1s ease-out;
+    border: 3px solid #fff;
+    z-index: 1;
+}
+
+.MenuHamburBot{
+    width: 50px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px brown;
+}
+
+.MenuHamburBot::before,
+.MenuHamburBot::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px brown;
+}
+
+.MenuHamburBot::before{
+    transform: translateY(-16px);
+}
+.MenuHamburBot::after{
+    transform: translateY(16px);
+}
+
+.coluna{
+    position: absolute;
+    content: '';
+    transform: translateX(-500px);
+    width: 420px;
+    height: 500px;
+    background-color: rgb(79, 79, 179);
+    transition: transform 1.41s ease-out;
+    border: 3px solid #fff;
+}
+
+
+
+/* MENUS ABERTOS */
+
+.MenuHambur.open   {
+    transition: all 1s ease-out;
+    transform: translateX(340px);
+    background: transparent;
+    box-shadow: none;
+    z-index: 1;
+}
+.coluna.open{
+    transition: all 1s ease-out;
+    transform: translateX(0px);
+}
+
+#cor{
+    cursor: pointer;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    width: 19%;
+    height: 80px;
+    top: 80px;
+    z-index: 1;
+    color: black;
+    border-radius: 50%;
+}
+
+
+.verde{
+    background-color: rgb(80, 242, 80);
+}
+
+.amarelo{
+    background-color: rgb(235, 235, 97);
+}
+
+.vermelho{
+    background-color: rgb(250, 70, 70);
+}
+
+.azul{
+    background-color: rgb(101, 101, 247);
+}
+
+.cinza{
+    background-color: darkgray;
+}
+
+.roxo{
+    background-color: blueviolet;
+}
+
+.rosa{
+    background-color: rgb(235, 100, 158);
+}
+
+.laranja{
+    background-color: rgb(255, 123, 0);
+}
+
+
+.slidercontainer{
+    position: relative;
+    top: 130px;
+    width: auto;
+}
+
+.slider, .slider2{
+    -webkit-appearance: none;  
+    background-color: #fff;
+    border-radius: 5em;
+    opacity: 1;
+    width: 100%;
+}
+
+.slider::-webkit-slider-thumb, .slider2::-webkit-slider-thumb{
+    height: 25px;
+    border-radius: 50%; 
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb, .slider2::-moz-range-thumb{
+    border-radius: 50%; 
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider.hover, .slider2.hover{
+    opacity: 1;
+}
+
+.numero, .numero2{
+    position: relative;
+    text-align: center;
+}
+
+.MenuHambur2.open{
+    transition: all 1s ease-out;
+    right: 340px;
+    z-index: 1;
+}
+
+.coluna2.open{
+    position: absolute;
+    display: block;
+    margin-bottom: 5px;
+    right:0;
+    width: 420px;
+    background-color:  rgb(79, 79, 179);
+    border: 3px solid #fff;
+    transform-origin: 4px 0px;
+  
+ 
+}
