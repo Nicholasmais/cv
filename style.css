@@ -5,14 +5,17 @@
 }
 
 body{
-    height: 100vh;
-    max-height: initial;
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 23vh 23vh 23vh 23vh 23vh;
     background-color: rgb(211, 211, 211);
+    min-width: 630px;
 }
-
+@media (min-width: 630px) {
+    body {
+        overflow-x: auto;
+    }
+}
 .div1{
     left: 5%;
     top: 2.5%;
@@ -22,26 +25,26 @@ body{
     background-color: #f0f8ff;
     width: 25vw;
     height: 97.5vh;
+    min-width: 200px;
     border-radius: 1.6vw;
 }
 
 
 .fotoenome{
     position: relative;
- 
 }
 
 .foto{
-    position: relative;
     border-radius: 1.6vw;
 }
 .nome{
-    margin-top: -10%;
-    margin-left: 2.5%;
     font-style: oblique;
     color: #f0f8ff;
-    position: relative;
+    position: absolute;
     text-shadow: 1px 1px #000000;
+    margin-left: 0.2em;
+    bottom: 0;
+    z-index: 1;
 }
 
 .pessoal{
@@ -75,13 +78,13 @@ hr{
     background-color: #f0f8ff;
     height: 23vh;
     border-radius: 10px;
-
+    min-width: 360px;
 }
 
 
 .trabalho{
     position: relative;
-    margin: 20px;
+    margin: 1.5vw;
 }
 
 .baixo{
@@ -93,6 +96,7 @@ hr{
     height: 100%;
     right: 2.5%;
     border-radius: 1.6vw;
+    min-width: 360px;
 }
 
 .lista3{
