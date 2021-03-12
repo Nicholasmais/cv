@@ -27,6 +27,7 @@ body{
     height: 97.5vh;
     min-width: 200px;
     border-radius: 1.6vw;
+    box-shadow: 0px 0px 5px ;
 }
 
 
@@ -79,6 +80,8 @@ hr{
     height: 23vh;
     border-radius: 10px;
     min-width: 360px;
+    box-shadow: 0px 0px 5px ;
+
 }
 
 
@@ -97,6 +100,8 @@ hr{
     right: 2.5%;
     border-radius: 1.6vw;
     min-width: 360px;
+    box-shadow: 0px 0px 5px ;
+
 }
 
 .lista3{
@@ -117,7 +122,6 @@ hr{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100% 100%;
-    grid-gap:
 }
 
 
@@ -136,20 +140,24 @@ hr{
     grid-column: 2;
     right: 50%;
     position: relative;
+    max-height: 4vh;
 }
 
 .modal, .modaljs, .modalpd{
     background-color: #f0f8ff;
     opacity: 1;
     width: 100%;
-    min-height: 46vh;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 10;
     opacity: 0;
     visibility: hidden;
-    border-radius: 10px;
+    border-radius: 1.6vw;
+    overflow: hidden;
+    max-height: 85vh;
+    box-shadow: 0px 0px 5px ;
+    border-radius: 1.6vw;
 }
 
 .modal:target, .modaljs:target, .modalpd:target{
@@ -160,8 +168,6 @@ hr{
 
 .modal:target .modalpy__content, .modaljs:target .modaljs__content, .modalpd:target .modal_pd{
     position: absolute;
-    top: 50%;
-    left: 50%;
     border-radius: 1em;
     opacity: 0;
     visibility: hidden; 
@@ -177,30 +183,41 @@ hr{
     line-height: 1.5em;
     text-align: justify;
     text-align: center;
+    border-radius: 1.6vw;
+    
 }
 
-
+.exlink{
+    display: flex;
+    justify-content: center;
+}
 p{
+    width: 100%;
     min-height: 46vh;
     overflow: scroll;
-    overflow-x: hidden;
+    overflow-x: hidden;                     
     max-height: 80vh;
 
 }
 
 .ppd{
+    width: 100%;
     overflow-y: hidden;
     position: absolute;
-    width: 100%;
-    text-align: center;
-    top: 25%;
     
+}
+
+.container{
+    position: relative;
+    text-align: center;
 }
 .aa{
     display: inline-block;
-    position: relative;
-
     
+}
+
+#modalpd{
+    height: 35vh;
 }
 
 .modal__close{
@@ -224,4 +241,28 @@ a:visited{
     text-decoration: none;
     text-align: center;
     margin-top: 1em;
+}
+
+footer{
+    padding: 1vh;
+    grid-column: 1/2 span;
+    position: abs;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #E0D1CA;
+}
+
+.link{
+    display: inline-block;
+    margin-right: 10px;
+}
+.git{
+    display: inline-block;
+}
+.link:hover, .git:hover {
+    padding: 1px;
+    transform: scale(1.5);
+    overflow-x: none;
+    cursor: pointer;
 }
