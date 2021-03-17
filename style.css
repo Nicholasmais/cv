@@ -79,7 +79,7 @@ body{
         overflow-x: auto;
         display: grid;
         grid-template-columns: 40% 60%;
-        grid-template-rows: 23vh 23vh 23vh 23vh 23vh;
+        grid-template-rows: 150px 150px 150px 150px 150px;
     }
     .div1{
         height: 97.5vh;
