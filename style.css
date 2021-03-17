@@ -284,16 +284,11 @@ p{
 
 }
 
-.ppd{
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
-}
 
 .container{
     position: relative;
     text-align: center;
-    overflow-y: hidden;
+    overflow-y: auto;
 
 }
 .aa{
@@ -304,7 +299,7 @@ p{
 
 #modalpd{
     height: 35vh;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 
 .modal__close{
