@@ -83,28 +83,27 @@ body{
     }
     .div1{
         height: 97.5vh;
-
         width: 25vw;
-        top: 2.5%;
-        left: 5%;
+        margin-top: 2.5em;
+        left: 2em;
         grid-column: 1;
         grid-row:1/6;
     }
     .cima{
         height: 23vh;
-        right: 5%;
-        margin-top: 2.5%;
+        right: 2em;
+        margin-top: 2.5em;
         grid-column: 2;
         grid-row: 1/2;
-        top: 0%;
+        overflow-y: auto;
     }
 
     .baixo{
-        right: 5%;
+        right: 2em;
         margin-top: 2.5%;
         grid-column: 2;
         grid-row: 2/4;
-        margin-top: 5%;    
+        margin-top: 5em;    
         height: 100%;
 
 
@@ -124,6 +123,7 @@ body{
     background-color: #f0f8ff;
     border-radius: 1.6vw;
     box-shadow: 0px 0px 5px ;
+    overflow-y: auto;
 }
 
 
@@ -163,6 +163,7 @@ hr{
     margin-top: 2.5%;
     margin-left: 10%;
     position: relative;
+    overflow-y: auto;
   
 }
 
@@ -191,50 +192,69 @@ hr{
     margin-left: 5%;
 }
 
+.list2{
+    overflow-y: auto;
+}
+
 .proj{
     margin-left: 2.5%;
     height: auto;
 }
 
-.hangman{
-    margin-top: 2.5%;
-    border-radius: 1.6vh;
-}
 
 .projetos{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100% 100%;
+    grid-template-rows: 100% 100% 100%;
+    row-gap: 2em;
 }
 
 
-.pythona, .jsa, .pd{
+.pythona, .jsa, .pd, .pgi{
     text-align: center;
-    margin-top: 2em;    
 }
 
-.modal_python, .modal_js, .modal_pd, .aa{
+.modal_python,.modal_pgi, .modal_js, .modal_pd, .aa{
     background-color: rgba(0,0,0,0.4);
     border-radius: 50%;
     padding: 2%;
 }
 
+.i1, .i2{
+    margin-top: 2em;
+}
+
+.i1{
+    grid-column: 1;
+    grid-row:1;
+}
+
+.i2{
+    grid-column: 2;
+    grid-row:1;
+}
+
 .i3{
     grid-column: 2;
+    grid-row: 2;
     right: 50%;
     position: relative;
     max-height: 4vh;
 }
 
-.modal, .modaljs, .modalpd{
+.i4{
+    grid-column: 1;
+    grid-row: 3;
+    
+}
+
+.modal, .modaljs, .modalpd, .modalpgi{
     background-color: #f0f8ff;
-    opacity: 1;
-    width: 100%;
     position: absolute;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: 10;
-    opacity: 0;
     visibility: hidden;
     border-radius: 1.6vw;
     overflow: hidden;
@@ -243,13 +263,15 @@ hr{
     border-radius: 1.6vw;
 }
 
-.modal:target, .modaljs:target, .modalpd:target{
+
+
+.modal:target, .modaljs:target, .modalpd:target, .modalpgi:target{
     opacity: 1;
     visibility: visible;
 }
 
 
-.modal:target .modalpy__content, .modaljs:target .modaljs__content, .modalpd:target .modal_pd{
+.modal:target .modalpy__content, .modaljs:target .modaljs__content, .modalpd:target .modal_pd, .modalpgi:target .modal_pgi{
     position: absolute;
     border-radius: 1em;
     opacity: 0;
@@ -331,7 +353,6 @@ footer{
     width: 100%;
     text-align: center;
     background-color: #E0D1CA;
-    z-index: ;
 }
 
 .link{
