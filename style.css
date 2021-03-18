@@ -29,7 +29,6 @@ body{
         width: 90%;
         left: 5%;
         right: 5%;
-        height: 200px;
     }
 
     footer{
@@ -38,10 +37,15 @@ body{
         width: 100%;
   }
 
+  .modal, .modaljs, .modalpd, .modalpgi{
+
+    max-height: 70vw;
+
+}
 }
 
 
-@media (min-width: 450px) {
+@media screen and (min-width: 450px) and (max-width: 762px) {
     .div1{
         margin-top: 5%;
         right: 5%;
@@ -63,7 +67,6 @@ body{
         width: 90%;
         left: 5%;
         right: 5%;
-        height: 200px;
     }
 
     footer{
@@ -71,6 +74,12 @@ body{
         bottom: 0;
         width: 100%;
   }
+
+  .modal, .modaljs, .modalpd, .modalpgi{
+
+    max-height: 60vw;
+
+}
 
 }
 
@@ -106,8 +115,15 @@ body{
         margin-top: 5em;    
         height: 100%;
 
+        
+    }
+
+    .modal, .modaljs, .modalpd, .modalpgi{
+
+        max-height: 85vh;
 
     }
+
 
     footer{
         background-color: #000000;
@@ -185,6 +201,7 @@ hr{
     background-color: hsl(208, 100%, 97%);
     border-radius: 1.6vw;
     box-shadow: 0px 0px 5px ;
+    padding-bottom: 2em;
 
 }
 
@@ -258,7 +275,6 @@ hr{
     visibility: hidden;
     border-radius: 1.6vw;
     overflow: hidden;
-    max-height: 85vh;
     box-shadow: 0px 0px 5px ;
     border-radius: 1.6vw;
 }
