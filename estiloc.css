@@ -40,7 +40,7 @@
 
     .coluna{
         width: 30vw;
-        height: 550px;
+        height: 570px;
         left: -30vw;
 
     }
@@ -231,4 +231,11 @@ body{
 .numero, .numero2{
     position: relative;
     text-align: center;
+}
+
+.botao{
+    position: relative;
+    margin: 1% auto;
+
+    display: block;   
 }

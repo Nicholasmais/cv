@@ -47,3 +47,15 @@ slider2.oninput = function(){
     document.querySelector(".texto").style.fontSize = (slider2.value) + "px";
     document.querySelector(".h1").style.fontSize = 2*slider2.value + "px";
 }
+
+function padrao(){
+    document.body.style.backgroundColor = "darkgray";
+    document.body.style.opacity = 82/100;
+    document.querySelector(".texto").style.fontSize = 1 + "em";
+    document.querySelector(".h1").style.fontSize = 2 + "em";
+    numero2.innerHTML = "16px";
+    slider2.value = 16
+    numero.innerHTML = '100%';
+    slider.value = 100
+
+}

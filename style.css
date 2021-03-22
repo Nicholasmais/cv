@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(211, 211, 211);
+    background-image: linear-gradient(to bottom, #D3D3D3,#FFE6FF) ;
+    background-attachment: fixed;
 }
 
 @media (max-width: 450px){
