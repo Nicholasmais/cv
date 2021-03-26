@@ -1,12 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    list-style: none;
     box-sizing: border-box;
 }
 body{
     background-image: linear-gradient(to bottom, #D3D3D3,#FFE6FF) ;
     background-attachment: fixed;
 }
+
 
 @media (max-width: 450px){
     .div1{
@@ -69,6 +71,7 @@ body{
         width: 90%;
         left: 5%;
         right: 5%;
+        margin-bottom: 30%;
     }
 
     footer{
@@ -85,36 +88,31 @@ body{
 }
 
 @media (min-width: 762px) {
-    body {
-        overflow-x: auto;
-        display: grid;
-        grid-template-columns: 40% 60%;
-        grid-template-rows: 150px 150px 150px 150px 150px;
-    }
+
     .div1{
+        position: absolute;
         height: 97.5vh;
         width: 25vw;
         margin-top: 2.5em;
-        left: 2em;
-        grid-column: 1;
-        grid-row:1/6;
+        margin-left: 2em;
+     
     }
     .cima{
+        position: absolute;
         height: 30vh;
+        width: 50vw;
+        left: 40%;
         right: 2em;
         margin-top: 2.5em;
-        grid-column: 2;
-        grid-row: 1/2;
         overflow-y: auto;
     }
 
     .baixo{
+        position: absolute;
         right: 2em;
-        grid-column: 2;
-        grid-row: 2/4;
-        margin-top: 7em;    
-        height: 100%;
-
+        top: 50%;
+        width: 50vw;
+        left: 40%;
         
     }
 
@@ -128,7 +126,6 @@ body{
 }
 
 .div1{
-    position: relative;
     background-color: #f0f8ff;
     border-radius: 1.6vw;
     box-shadow: 0px 0px 5px ;
@@ -177,7 +174,6 @@ hr{
 }
 
 .cima{
-    position: relative;
     background-color: #f0f8ff;
     border-radius: 10px;
     box-shadow: 0px 0px 5px ;
@@ -190,12 +186,24 @@ hr{
 }
 
 .baixo{
-    position: relative;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 50% 50%;
+    row-gap: 2em;
     background-color: hsl(208, 100%, 97%);
     border-radius: 1.6vw;
     box-shadow: 0px 0px 5px ;
-    padding-bottom: 2em;
+}
 
+.baixo > div{
+    width: 100%;
+    max-height: 1em;
+}
+
+.h1{
+    grid-column: 1;
+    grid-row: 1;
+    max-height: 1em;
 }
 
 .lista3{
@@ -209,20 +217,6 @@ hr{
     overflow-y: auto;
 }
 
-.proj{
-    margin-left: 2.5%;
-    height: auto;
-}
-
-
-.projetos{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100% 100% 100%;
-    row-gap: 2em;
-}
-
-
 .pythona, .jsa, .pd, .pgi{
     text-align: center;
 }
@@ -233,31 +227,30 @@ hr{
     padding: 2%;
 }
 
-.i1, .i2{
-    margin-top: 2em;
-}
+
 
 .i1{
+    
     grid-column: 1;
-    grid-row:1;
+    grid-row:2;
 }
 
 .i2{
     grid-column: 2;
-    grid-row:1;
+    grid-row:2;
 }
 
 .i3{
-    grid-column: 2;
-    grid-row: 2;
-    right: 50%;
-    position: relative;
-    max-height: 4vh;
+    grid-column: 1/2 span;
+    grid-row: 3;
+    
+
 }
 
 .i4{
-    grid-column: 1;
-    grid-row: 3;
+    grid-column: 1/2 span;
+    grid-row: 4;
+    margin-bottom: 5%;
     
 }
 
