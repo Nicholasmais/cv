@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
     box-sizing: border-box;
 }
 body{
@@ -13,27 +12,23 @@ body{
 @media (max-width: 450px){
     .div1{
         margin-top: 5%;
-        right: 5%;
-        left: 5%;
+        margin-left: 5%;
         width: 90%;
-        height: 160vw;
+        padding-bottom: 1em;
 
     }
     .cima{
         margin-top: 5%;
         width: 90%;
-        left: 5%;
-        right: 5%;
-        
-
-
+        margin-left: 5%;
+        padding-bottom: 1em;
     }
 
     .baixo{
         margin-top: 5%;
+        margin-bottom: 20%;
         width: 90%;
-        left: 5%;
-        right: 5%;
+        margin-left: 5%;
     }
 
     footer{
@@ -52,8 +47,7 @@ body{
 @media screen and (min-width: 450px) and (max-width: 762px) {
     .div1{
         margin-top: 5%;
-        right: 5%;
-        left: 5%;
+        margin-left: 5%;
         width: 90%;
         height: 135vw;
 
@@ -61,16 +55,17 @@ body{
     .cima{
         margin-top: 5%;
         width: 90%;
-        left: 5%;
-        right: 5%;
-
+        margin-left: 5%;
     }
-
+        
+    .lista3 > li{
+        margin-left: 5%;
+        padding: 1%;
+    }
     .baixo{
         margin-top: 5%;
         width: 90%;
-        left: 5%;
-        right: 5%;
+        margin-left: 5%;
         margin-bottom: 30%;
     }
 
@@ -91,28 +86,26 @@ body{
 
     .div1{
         position: absolute;
-        height: 97.5vh;
+        height: 85vh;
         width: 25vw;
         margin-top: 2.5em;
-        margin-left: 2em;
+        left: 5%;
      
     }
     .cima{
         position: absolute;
-        height: 30vh;
+        height: 25vh;
         width: 50vw;
-        left: 40%;
-        right: 2em;
+        right: 10%;
         margin-top: 2.5em;
         overflow-y: auto;
     }
 
     .baixo{
         position: absolute;
-        right: 2em;
-        top: 50%;
+        top: 40%;
         width: 50vw;
-        left: 40%;
+        right: 10%;
         
     }
 
@@ -145,7 +138,7 @@ body{
     color: #f0f8ff;
     position: absolute;
     text-shadow: 1px 1px #000000;
-    margin-left: 0.2em;
+    margin-left: 0.5em;
     bottom: 0;
     z-index: 1;
 }
@@ -207,11 +200,9 @@ hr{
 }
 
 .lista3{
-    margin:0px auto;
-    text-align: center;
-    margin-top: 4%;
     margin-left: 5%;
 }
+
 
 .list2{
     overflow-y: auto;
@@ -265,7 +256,6 @@ hr{
     border-radius: 1.6vw;
     overflow: hidden;
     box-shadow: 0px 0px 5px ;
-    border-radius: 1.6vw;
 }
 
 
@@ -278,7 +268,6 @@ hr{
 
 .modal:target .modalpy__content, .modaljs:target .modaljs__content, .modalpd:target .modal_pd, .modalpgi:target .modal_pgi{
     position: absolute;
-    border-radius: 1em;
     opacity: 0;
     visibility: hidden; 
     
@@ -294,7 +283,6 @@ hr{
     line-height: 1.5em;
     text-align: justify;
     text-align: center;
-    border-radius: 1.6vw;
     
 }
 
