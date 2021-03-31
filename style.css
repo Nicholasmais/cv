@@ -31,11 +31,7 @@ body{
         margin-left: 5%;
     }
 
-    footer{
-        position: fixed;
-        width: 100%;
-  }
-
+  
   .modal, .modaljs, .modalpd, .modalpgi{
 
     max-height: 70vw;
@@ -69,10 +65,7 @@ body{
         margin-bottom: 30%;
     }
 
-    footer{
-        position: fixed;
-        width: 100%;
-  }
+
 
   .modal, .modaljs, .modalpd, .modalpgi{
 
@@ -348,16 +341,28 @@ footer{
     padding: 1vh;
     grid-column: 1/2 span;
     position: fixed;
+    display: block;
+    height: 55px;
 }
 
-.link{
-    display: inline-block;
-    margin-right: 10px;
+.redes{
+    margin-top: 0.5%;
+    width: 67.1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
-.git{
-    display: inline-block;
+
+.lt{
+    display: block;
+    width: 20px;
+    height: 20px;
 }
-.link:hover, .git:hover {
+
+
+.link:hover, .git:hover , .lt:hover{
     padding: 1px;
     transform: scale(1.5);
     overflow-x: none;
