@@ -32,11 +32,20 @@ body{
     }
 
   
-  .modal, .modaljs, .modalpd, .modalpgi{
-
-    max-height: 70vw;
-
-}
+    .modal, .modaljs, .modalpd, .modalpgi{
+        background-color: #f0f8ff;
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        z-index: 10;
+        visibility: hidden;
+        border-radius: 1.6vw;
+        overflow: hidden;
+        box-shadow: 0px 0px 5px ;
+    }
+    .modalpgi{
+        max-height: fit-content;
+    }
 }
 
 
@@ -67,11 +76,17 @@ body{
 
 
 
-  .modal, .modaljs, .modalpd, .modalpgi{
-
-    max-height: 60vw;
-
-}
+    .modal, .modaljs, .modalpd, .modalpgi{
+        background-color: #f0f8ff;
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        z-index: 10;
+        visibility: hidden;
+        border-radius: 1.6vw;
+        overflow: hidden;
+        box-shadow: 0px 0px 5px ;
+    }
 
 }
 
@@ -101,13 +116,23 @@ body{
         right: 10%;
         
     }
-
     .modal, .modaljs, .modalpd, .modalpgi{
-
-        max-height: 85vh;
-
+        background-color: #f0f8ff;
+        position: absolute;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        z-index: 10;
+        visibility: hidden;
+        border-radius: 1.6vw;
+        overflow: hidden;
+        box-shadow: 0px 0px 5px ;
     }
 
+    #modalpd{
+        height: 45vh;
+        overflow-y: hidden;
+    }
 
 }
 
@@ -211,10 +236,7 @@ hr{
     padding: 2%;
 }
 
-
-
-.i1{
-    
+.i1{ 
     grid-column: 1;
     grid-row:2;
 }
@@ -227,8 +249,6 @@ hr{
 .i3{
     grid-column: 1/2 span;
     grid-row: 3;
-    
-
 }
 
 .i4{
@@ -238,18 +258,6 @@ hr{
     
 }
 
-.modal, .modaljs, .modalpd, .modalpgi{
-    background-color: #f0f8ff;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    visibility: hidden;
-    border-radius: 1.6vw;
-    overflow: hidden;
-    box-shadow: 0px 0px 5px ;
-}
 
 
 
@@ -285,7 +293,6 @@ hr{
 }
 p{
     width: 100%;
-    min-height: 46vh;
     overflow: scroll;
     overflow-x: hidden;                     
     max-height: 80vh;
@@ -303,11 +310,6 @@ p{
     display: inline-block;
     overflow-y: hidden;
 
-}
-
-#modalpd{
-    height: 35vh;
-    overflow-y: auto;
 }
 
 .modal__close{
