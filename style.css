@@ -26,25 +26,30 @@ body{
 
     .baixo{
         margin-top: 5%;
-        margin-bottom: 20%;
         width: 90%;
         margin-left: 5%;
     }
 
-  
     .modal, .modaljs, .modalpd, .modalpgi{
-        background-color: #f0f8ff;
-        position: absolute;
         width: 90%;
         left: 5%;
-        z-index: 10;
-        visibility: hidden;
-        border-radius: 1.6vw;
-        overflow: hidden;
-        box-shadow: 0px 0px 5px ;
     }
+
+    .modal, .modaljs{
+        margin-top: -23.5%;
+    }
+    
+    .modalpd{
+        margin-top: -35%;
+        height: 213px;
+    }
+
     .modalpgi{
-        max-height: fit-content;
+        margin-top: -47%;
+    }
+
+    #modal__paragraphv{
+        height: 200px;
     }
 }
 
@@ -73,21 +78,29 @@ body{
         margin-left: 5%;
         margin-bottom: 30%;
     }
-
-
-
     .modal, .modaljs, .modalpd, .modalpgi{
-        background-color: #f0f8ff;
-        position: absolute;
         width: 90%;
         left: 5%;
-        z-index: 10;
-        visibility: hidden;
-        border-radius: 1.6vw;
-        overflow: hidden;
-        box-shadow: 0px 0px 5px ;
+    }
+    
+
+    #modal__paragraphv{
+        height: 330px;
+    }
+    .modal, .modaljs{
+        margin-top: -15.5%;
+    }
+    
+    .modalpd{
+        margin-top: -23%;
+        height: 225.5px;
     }
 
+    .modalpgi{
+        margin-top: -30%;
+    }
+
+  
 }
 
 @media (min-width: 762px) {
@@ -115,23 +128,34 @@ body{
         width: 50vw;
         right: 10%;
         
+    
     }
     .modal, .modaljs, .modalpd, .modalpgi{
-        background-color: #f0f8ff;
-        position: absolute;
         width: 100%;
-        top: 0%;
-        left: 0%;
-        z-index: 10;
-        visibility: hidden;
-        border-radius: 1.6vw;
-        overflow: hidden;
-        box-shadow: 0px 0px 5px ;
     }
+    
 
     #modalpd{
         height: 45vh;
         overflow-y: hidden;
+    }
+    #modal__paragraphv{
+        height: 380px;
+    }
+    .modal, .modaljs{
+        margin-top: -15%;
+    }
+    .modaljs{
+        margin-left:-50%;
+    }
+    
+    .modalpd{
+        margin-top: -22%;
+        height: 225.5px;
+    }
+
+    .modalpgi{
+        margin-top: -28.5%;
     }
 
 }
@@ -230,11 +254,7 @@ hr{
     text-align: center;
 }
 
-.modal_python,.modal_pgi, .modal_js, .modal_pd, .aa{
-    background-color: rgba(0,0,0,0.4);
-    border-radius: 50%;
-    padding: 2%;
-}
+
 
 .i1{ 
     grid-column: 1;
@@ -258,6 +278,15 @@ hr{
     
 }
 
+.modal, .modaljs, .modalpd, .modalpgi{
+    background-color: #f0f8ff;
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+    border-radius: 1.6vw;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px ;
+}
 
 
 
