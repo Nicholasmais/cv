@@ -30,7 +30,7 @@ body{
         margin-left: 5%;
     }
 
-    .modal, .modaljs, .modalpd, .modalpgi{
+    .modal, .modaljs, .modalpd, .modalpgi, .modalpyf{
         width: 90%;
         left: 5%;
     }
@@ -44,7 +44,7 @@ body{
         height: 213px;
     }
 
-    .modalpgi{
+    .modalpgi, .modalpyf{
         margin-top: -47%;
     }
 
@@ -78,7 +78,7 @@ body{
         margin-left: 5%;
         margin-bottom: 30%;
     }
-    .modal, .modaljs, .modalpd, .modalpgi{
+    .modal, .modaljs, .modalpd, .modalpgi, .modalpyf{
         width: 90%;
         left: 5%;
     }
@@ -96,7 +96,7 @@ body{
         height: 225.5px;
     }
 
-    .modalpgi{
+    .modalpgi, .modalpyf{
         margin-top: -30%;
     }
 
@@ -130,7 +130,7 @@ body{
         
     
     }
-    .modal, .modaljs, .modalpd, .modalpgi{
+    .modal, .modaljs, .modalpd, .modalpgi, .modalpyf{
         width: 100%;
     }
     
@@ -147,6 +147,10 @@ body{
     }
     .modaljs{
         margin-left:-50%;
+    }
+    .modalpyf{
+        margin-left:-50%;
+        margin-top:-30%;
     }
     
     .modalpd{
@@ -250,7 +254,7 @@ hr{
     overflow-y: auto;
 }
 
-.pythona, .jsa, .pd, .pgi{
+.pythona, .jsa, .pd, .pgi, .pyf{
     text-align: center;
 }
 
@@ -272,13 +276,18 @@ hr{
 }
 
 .i4{
-    grid-column: 1/2 span;
+    grid-column: 1;
     grid-row: 4;
     margin-bottom: 5%;
-    
 }
 
-.modal, .modaljs, .modalpd, .modalpgi{
+.i5{
+    grid-column: 2;
+    grid-row:4;
+    margin-bottom: 5%;
+}
+
+.modal, .modaljs, .modalpd, .modalpgi, .modalpyf{
     background-color: #f0f8ff;
     position: absolute;
     z-index: 10;
@@ -290,13 +299,13 @@ hr{
 
 
 
-.modal:target, .modaljs:target, .modalpd:target, .modalpgi:target{
+.modal:target, .modaljs:target, .modalpd:target, .modalpgi:target, .modalpyf:target{
     opacity: 1;
     visibility: visible;
 }
 
 
-.modal:target .modalpy__content, .modaljs:target .modaljs__content, .modalpd:target .modal_pd, .modalpgi:target .modal_pgi{
+.modal:target .modalpy__content, .modaljs:target .modaljs__content, .modalpd:target .modal_pd, .modalpgi:target .modal_pgi, .modalpyf:target .modal_pyf{
     position: absolute;
     opacity: 0;
     visibility: hidden; 

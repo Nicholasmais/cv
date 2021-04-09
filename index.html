@@ -34,13 +34,18 @@ function modaljs(){
     document.querySelector(".baixo").style.boxShadow = "none";
 
 }
+function modalpyf(){
+    document.querySelector(".modalpyf").style.visibility = 'visible';
+    document.querySelector(".baixo").style.boxShadow = "none";
 
+}
 
 function closemo(){
     document.querySelector(".modal").style.visibility = 'hidden';
     document.querySelector(".modaljs").style.visibility = 'hidden';
     document.querySelector(".modalpgi").style.visibility = 'hidden';
     document.querySelector(".modalpd").style.visibility = 'hidden';
+    document.querySelector(".modalpyf").style.visibility = 'hidden';
     document.querySelector(".baixo").style.boxShadow = "0px 0px 5px";
 
 }
@@ -200,6 +205,26 @@ function closemo(){
 
         </div>
 
+        <div class="i5">
+            <div class="pyf">
+                <b onclick="modalpyf()">Série de Fourier</b>
+            </div>
+
+            <div class="modalpyf" id="modalpyf">
+                <div class="modal__content" >
+                    <b style="overflow: hidden;position: absolute; font-size: 50px;right: 5%; z-index: 1000; cursor: pointer;" onclick="closemo()">&times;</b>
+                    <h2 class="modal__heading">Gráfico</h2>
+
+                <a href="Simulador.rar" download class="exlink">Baixe arquivo executável</a>
+
+                <p class="modal__paragraph" id="modal__paragraphv" style="overflow: hidden;">
+                    <img src="Fourier/fourier.png" alt="">
+                </p>
+                </div>
+            </div>
+
+        </div>
+            
     </div>
 
     <footer>
