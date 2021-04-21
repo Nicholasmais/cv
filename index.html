@@ -16,28 +16,24 @@ document.querySelector("video").pause();
 
 function modal(){
     document.querySelector(".modal").style.visibility = 'visible';
-    document.querySelector(".baixo").style.boxShadow = "none";
+    document.querySelector(".baixo").style.visibility = "hidden";
 }
 
 function modalpd(){
     document.querySelector(".modalpd").style.visibility = 'visible';
-    document.querySelector(".baixo").style.boxShadow = "none";
-
+    document.querySelector(".baixo").style.visibility = "hidden";
 }
 function modalpgi(){
     document.querySelector(".modalpgi").style.visibility = 'visible';
-    document.querySelector(".baixo").style.boxShadow = "none";
-
+    document.querySelector(".baixo").style.visibility = "hidden";
 }
 function modaljs(){
     document.querySelector(".modaljs").style.visibility = 'visible';
-    document.querySelector(".baixo").style.boxShadow = "none";
-
+    document.querySelector(".baixo").style.visibility = "hidden";
 }
 function modalpyf(){
     document.querySelector(".modalpyf").style.visibility = 'visible';
-    document.querySelector(".baixo").style.boxShadow = "none";
-
+    document.querySelector(".baixo").style.visibility = "hidden";
 }
 
 function closemo(){
@@ -47,7 +43,7 @@ function closemo(){
     document.querySelector(".modalpd").style.visibility = 'hidden';
     document.querySelector(".modalpyf").style.visibility = 'hidden';
     document.querySelector(".baixo").style.boxShadow = "0px 0px 5px";
-
+    document.querySelector(".baixo").style.visibility = "visible";
 }
 
 </script>
@@ -141,6 +137,7 @@ function closemo(){
                 </div>
 
                 <div class="modaljs" id="modaljs">
+                    
                     <div class="modal__content">
                         <b style="overflow: hidden;position: absolute; font-size: 50px;right: 5%; z-index: 1000; cursor: pointer;" onclick="closemo()">&times;</b>
                     <h2 class="modal__heading"> Customize esta página!</h2>
@@ -148,15 +145,9 @@ function closemo(){
                     <a href="indexc.html" target="_blank" class="exlink">Experimente!</a>
 
                     <p class="modal__paragraph">
-
-
-                        
                         <img src="mediajs/Sem título.png" alt="" style="display: block;">
-                        <img src="mediajs/Sem título2.png" alt=""style="display: block;">
-                        <img src="mediajs/Sem título3.png" alt=""style="display: block;">
-                        <img src="mediajs/Sem título4.png" alt=""style="display: block;">
-                        <img src="mediajs/Sem título5.png" alt=""style="display: block;">
                     </p>
+
                     </div>
                 </div>
         </div>
