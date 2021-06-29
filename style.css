@@ -30,7 +30,7 @@ body{
         margin-left: 5%;
     }
 
-    .modal, .modaljs, .modalpd, .modalpgi, .modalpyf{
+    .modal, .modaljs, .modalpd, .modalpgi, .modalpyf, .modalphp{
         width: 90%;
         left: 5%;
     }
@@ -44,10 +44,10 @@ body{
         height: 213px;
     }
 
-    .modalpgi, .modalpyf{
+    .modalpgi, .modalpyf, .modalphp{
         margin-top: -47%;
     }
-
+ 
     #modal__paragraphv{
         height: 200px;
     }
@@ -78,7 +78,7 @@ body{
         margin-left: 5%;
         margin-bottom: 30%;
     }
-    .modal, .modaljs, .modalpd, .modalpgi, .modalpyf{
+    .modal, .modaljs, .modalpd, .modalpgi, .modalpyf, .modalphp{
         width: 90%;
         left: 5%;
     }
@@ -96,7 +96,7 @@ body{
         height: 225.5px;
     }
 
-    .modalpgi, .modalpyf{
+    .modalpgi, .modalpyf, .modalphp{
         margin-top: -30%;
     }
 
@@ -128,9 +128,10 @@ body{
         width: 50vw;
         right: 10%;
         
+        
     
     }
-    .modal, .modaljs, .modalpd, .modalpgi, .modalpyf{
+    .modal, .modaljs, .modalpd, .modalpgi, .modalpyf, .modalphp{
         width: 100%;
     }
     
@@ -163,9 +164,8 @@ body{
 
     }
 
-    .modalpgi{
+    .modalpgi, .modalphp{
         top:23vh;
-
         margin-top: -28.5%;
     }
 
@@ -261,7 +261,7 @@ hr{
     overflow-y: auto;
 }
 
-.pythona, .jsa, .pd, .pgi, .pyf{
+.pythona, .jsa, .pd, .pgi, .pyf, .php{
     text-align: center;
 }
 
@@ -298,7 +298,12 @@ hr{
     margin-bottom: 5%;
 }
 
-.modal, .modaljs, .modalpd, .modalpgi, .modalpyf{
+.i6{
+    grid-column: 1/2 span;
+    grid-row: 5;
+}
+
+.modal, .modaljs, .modalpd, .modalpgi, .modalpyf, .modalphp{
     background-color: #f0f8ff;
     position: absolute;
     z-index: 10;
@@ -312,13 +317,13 @@ hr{
 
 
 
-.modal:target, .modaljs:target, .modalpd:target, .modalpgi:target, .modalpyf:target{
+.modal:target, .modaljs:target, .modalpd:target, .modalpgi:target, .modalpyf:target, .modalphp:target{
     opacity: 1;
     visibility: visible;
 }
 
 
-.modal:target .modalpy__content, .modaljs:target .modaljs__content, .modalpd:target .modal_pd, .modalpgi:target .modal_pgi, .modalpyf:target .modal_pyf{
+.modal:target .modalpy__content, .modaljs:target .modaljs__content, .modalpd:target .modal_pd,.modalphp:target, .modalphp .modalpgi:target .modal_pgi, .modalpyf:target .modal_pyf{
     position: absolute;
     opacity: 0;
     visibility: hidden; 

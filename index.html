@@ -8,46 +8,6 @@
     <script src="https://kit.fontawesome.com/8b4d02f2c8.js" crossorigin="anonymous"></script>
 </head>
 
-<script>
-
-function stop(){
-document.querySelector("video").pause();
-}
-
-function modal(){
-    document.querySelector(".modal").style.visibility = 'visible';
-    document.querySelector(".baixo").style.visibility = "hidden";
-}
-
-function modalpd(){
-    document.querySelector(".modalpd").style.visibility = 'visible';
-    document.querySelector(".baixo").style.visibility = "hidden";
-}
-function modalpgi(){
-    document.querySelector(".modalpgi").style.visibility = 'visible';
-    document.querySelector(".baixo").style.visibility = "hidden";
-}
-function modaljs(){
-    document.querySelector(".modaljs").style.visibility = 'visible';
-    document.querySelector(".baixo").style.visibility = "hidden";
-}
-function modalpyf(){
-    document.querySelector(".modalpyf").style.visibility = 'visible';
-    document.querySelector(".baixo").style.visibility = "hidden";
-}
-
-function closemo(){
-    document.querySelector(".modal").style.visibility = 'hidden';
-    document.querySelector(".modaljs").style.visibility = 'hidden';
-    document.querySelector(".modalpgi").style.visibility = 'hidden';
-    document.querySelector(".modalpd").style.visibility = 'hidden';
-    document.querySelector(".modalpyf").style.visibility = 'hidden';
-    document.querySelector(".baixo").style.boxShadow = "0px 0px 5px";
-    document.querySelector(".baixo").style.visibility = "visible";
-}
-
-</script>
-
 <body>
     
     <div class="div1">
@@ -129,7 +89,6 @@ function closemo(){
                     </div>
                 </div>
         </div>
-
 
         <div class="i2">
                 <div class="jsa">
@@ -215,7 +174,34 @@ function closemo(){
             </div>
 
         </div>
-            
+
+        <div class="i6">
+            <div class="php">
+                <b style="cursor: pointer;" onclick="modalphp()">PHP/MySQL</b>
+            </div>
+
+            <div class="modalphp" id="modalphp">
+                <div class="modal__content" >
+                    <b style="overflow: hidden;position: absolute; font-size: 50px;right: 5%; z-index: 1000; cursor: pointer;" onclick="closemo()">&times;</b>
+                    <h2 class="modal__heading">Login</h2>
+
+                <p class="modal__paragraph" id="modal__paragraphv" >
+                    <img src="php/Sem título.png" alt="">
+                    <img src="php/Sem título2.png" alt="">
+                    <img src="php/Sem título3.png" alt="">
+                    <img src="php/Sem título4.png" alt="">
+                    <img src="php/Sem título5.png" alt="">
+                    <img src="php/Sem título6.png" alt="">
+                    <img src="php/Sem título7.png" alt="">
+                </p>
+                </div>
+            </div>
+
+        </div>
+
+        <h1></h1>
+
+
     </div>
 
     <footer>
@@ -230,6 +216,6 @@ function closemo(){
                     <div class="lt"><a href="http://lattes.cnpq.br/0252689841316986" target="blank" > <img src="icon_Lattest (1).ico" > </a></div>
   </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
